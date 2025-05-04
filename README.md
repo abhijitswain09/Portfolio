@@ -3,7 +3,7 @@
 Welcome to my GitHub Pages portfolio! I am a bioinformatician at Genomiki Solutions Pvt. Ltd. with expertise in NGS, variant analysis, and precision diagnostics.
 
 ## Live Site
-[https://abhijitswain09.github.io](https://abhijitswain09.github.io)
+[https://abhijitswain09.github.io/Portfolio](https://abhijitswain09.github.io/Portfolio)
 
 ## Sections
 - **About Me**: Overview of my background and role.
