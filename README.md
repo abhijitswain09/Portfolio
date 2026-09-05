@@ -16,5 +16,5 @@ Welcome to my GitHub Pages portfolio! I am a bioinformatician at Genomiki Soluti
 - GitHub Pages for hosting
 
 ## Contact
-- Email: [abhijitswain@genomiki.com](mailto:abhijitswain@genomiki.com)
+- Email: [abhijitswain148@gmail.com](mailto:abhijitswain148@gmail.com)
 - LinkedIn: [linkedin.com/in/abhijitswain09](https://www.linkedin.com/in/abhijitswain09)
