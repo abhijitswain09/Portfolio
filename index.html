@@ -1,88 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhijit Swain | Senior Bioinformatician Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="Abhijit Swain — Senior Bioinformatician working across clinical genomics, NGS, cancer genomics, microbial genomics, and AI-assisted interpretation.">
+  <title>Abhijit Swain — Bioinformatics, decoded.</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 1rem auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    p {
-      line-height: 1.6;
-    }
-    .links {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .links a {
-      margin: 0 1rem;
-      color: #0077b5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1rem;
-      }
-    }
+    :root{color-scheme:dark;--bg:#090d16;--panel:#101725;--panel2:#131d2d;--text:#eef4ff;--muted:#9aabc2;--line:#253247;--cyan:#61f0e2;--violet:#a99aff;--green:#a8f0b0;--shadow:0 22px 70px #0005}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#17294a 0,transparent 36%),radial-gradient(ellipse at 0% 35%,#102c31 0,transparent 28%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(18px);background:#090d16d9;border-bottom:1px solid #ffffff12}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.03em}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border:1px solid #61f0e277;border-radius:10px;color:var(--cyan);font-size:18px;background:#61f0e20d}.nav-links{display:flex;gap:25px;align-items:center;color:var(--muted);font-size:14px}.nav-links a:hover,.text-link:hover{color:var(--cyan)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 15px;border-radius:10px;border:1px solid #61f0e25e;background:#61f0e20d;color:var(--cyan);font-weight:650;font-size:14px;transition:transform .2s,border-color .2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);border-color:var(--cyan)}.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:8px}
+    .hero{min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:85px 0 95px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}h1{font-size:clamp(46px,6.5vw,76px);line-height:1.04;letter-spacing:-.065em;margin:24px 0 22px;font-weight:790}h1 .gradient{background:linear-gradient(100deg,var(--cyan),#a3d9ff 48%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:610px;color:var(--muted);font-size:18px;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button.primary{background:var(--cyan);color:#061315;border-color:var(--cyan)}.micro{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font:12px ui-monospace,monospace}.micro span:before{content:"↗";color:var(--cyan);margin-right:7px}
+    .visual{position:relative;min-height:410px;display:grid;place-items:center}.orb{position:absolute;width:min(390px,90%);aspect-ratio:1;border:1px solid #61f0e22a;border-radius:50%;background:radial-gradient(circle at 50% 50%,#61f0e210,transparent 60%);box-shadow:inset 0 0 70px #61f0e208,0 0 70px #61f0e208}.orb:before,.orb:after{content:"";position:absolute;inset:13%;border:1px solid #a99aff45;border-radius:50%;transform:rotateX(68deg) rotate(30deg)}.orb:after{inset:20%;transform:rotateX(68deg) rotate(-38deg);border-color:#61f0e250}.dna{position:relative;width:185px;height:290px;filter:drop-shadow(0 0 18px #61f0e225)}.dna svg{width:100%;height:100%;overflow:visible}.float-card{position:absolute;background:#101725eF;border:1px solid var(--line);border-radius:12px;padding:12px 15px;box-shadow:var(--shadow);font:12px ui-monospace,monospace}.float-card b{display:block;color:var(--text);font-size:13px;margin-bottom:3px}.float-card span{color:var(--muted)}.fc1{top:55px;right:-3px}.fc2{bottom:50px;left:-8px}.fc3{bottom:0;right:12px}
+    section{padding:82px 0;border-top:1px solid #ffffff0c}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.kicker{font:12px ui-monospace,monospace;letter-spacing:.14em;color:var(--cyan);text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.045em;line-height:1.15;margin:12px 0 0}.section-head p{max-width:450px;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:linear-gradient(145deg,#131d2bd9,#0e1521e8);border:1px solid var(--line);border-radius:18px;padding:26px}.panel h3{margin:0 0 12px;font-size:19px;letter-spacing:-.02em}.panel p{margin:0;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{font:12px ui-monospace,monospace;color:#c3d4e9;border:1px solid #33445a;background:#172235;border-radius:7px;padding:6px 9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.stat{padding:16px;border:1px solid var(--line);border-radius:12px;background:#0b121e}.stat b{display:block;color:var(--cyan);font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+    .filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 22px}.filter{border:1px solid var(--line);background:#101725;color:var(--muted);padding:8px 12px;border-radius:9px;cursor:pointer;font:13px ui-monospace,monospace}.filter[aria-pressed=true]{color:#071312;background:var(--cyan);border-color:var(--cyan)}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.project{padding:22px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(155deg,#131c2a,#0c121d);min-height:235px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-4px);border-color:#61f0e266}.project[hidden]{display:none}.project-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.project-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#61f0e210;border:1px solid #61f0e22c;color:var(--cyan);font-size:20px}.project-type{font:10px ui-monospace,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.project h3{font-size:17px;margin:0 0 8px}.project p{color:var(--muted);font-size:14px;margin:0 0 18px}.project .tags{margin-top:auto}.project .tag{font-size:10px;padding:5px 7px}
+    .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stack{padding:17px;border:1px solid var(--line);border-radius:13px;background:#101725}.stack b{display:block;font-size:14px;margin-bottom:4px}.stack span{font-size:12px;color:var(--muted)}.now-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.now-item{display:flex;gap:15px;padding:20px;border:1px solid var(--line);border-radius:14px;background:#101725}.now-icon{color:var(--cyan);font-size:20px}.now-item h3{margin:0 0 5px;font-size:15px}.now-item p{margin:0;color:var(--muted);font-size:13px}
+    .contact{padding:38px;border:1px solid #61f0e23c;border-radius:22px;background:radial-gradient(ellipse at 100% 0%,#a99aff13,transparent 45%),linear-gradient(120deg,#10202a,#101725)}.contact h2{font-size:clamp(30px,4vw,45px);letter-spacing:-.05em;line-height:1.15;margin:12px 0}.contact p{color:var(--muted);max-width:620px}.contact-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer{padding:25px 0 35px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a:hover{color:var(--cyan)}.cursor{display:inline-block;width:8px;height:1em;background:var(--cyan);vertical-align:-2px;animation:blink 1s steps(2,start) infinite}@keyframes blink{to{visibility:hidden}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:15px;padding:70px 0 60px}.hero-copy{max-width:700px}.visual{min-height:360px}.orb{width:320px}.dna{height:245px}.fc1{right:8%}.fc2{left:8%}.project-grid{grid-template-columns:repeat(2,1fr)}.stack-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.section-head p{max-width:620px}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,1120px)}.nav-inner{height:64px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:64px;left:0;right:0;padding:18px 22px 22px;background:#090d16f7;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.nav-cta{display:none}.hero{min-height:auto;padding:65px 0 50px}h1{font-size:clamp(43px,12vw,60px)}.hero p{font-size:16px}.visual{min-height:320px}.orb{width:275px}.dna{height:220px}.float-card{font-size:10px;padding:10px}.fc1{top:22px;right:0}.fc2{bottom:28px;left:0}.fc3{right:0}.section{padding:60px 0}section{padding:62px 0}.about-grid,.project-grid,.now-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:12px 8px}.stat b{font-size:17px}.stat span{font-size:10px}.panel{padding:21px}.contact{padding:25px}.stack-grid{gap:8px}.stack{padding:13px}.micro{gap:10px}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Abhijit Swain</h1>
-    <p>Senior Bioinformatician | Genomics Enthusiast | NGS Analyst</p>
-  </header>
-
-  <div class="container">
-    <img src="profile.jpg" alt="Abhijit Swain" class="profile-img" />
-    <h2>About Me</h2>
-    <p>
-      I am a passionate bioinformatician currently working at Genomiki Solutions Pvt. Ltd., specializing in diagnostic NGS analysis, antimicrobial resistance studies, microbiome projects, and genome interpretation. With a strong academic foundation in Bioinformatics, I bring deep expertise in variant annotation, disease association interpretation, and tool development.
-    </p>
-
-    <h2>Experience</h2>
-    <ul>
-      <li>Senior Bioinformatician – Genomiki Solutions Pvt. Ltd.</li>
-      <li>Bioinformatician – Genomiki Solutions Pvt. Ltd.</li>
-      <li>Junior Bioinformatics Analyst – Sandors Bioinformatics Pvt. Ltd.</li>
-    </ul>
-
-    <h2>Academic Background</h2>
-    <p>
-      Master’s in Bioinformatics with a focus on genomics pipelines, variant curation, and translational research in rare pediatric diseases.
-    </p>
-
-    <div class="links">
-      <a href="https://github.com/abhijitswain09" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/abhijit-swain" target="_blank">LinkedIn</a>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner">
+    <a class="brand" href="#home" aria-label="Abhijit Swain home"><span class="brand-mark">⌬</span><span>abhijit<span style="color:var(--cyan)">.swain</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu ☰</button>
+    <div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#work">Focus areas</a><a href="#toolkit">Toolkit</a><a href="#now">Now</a></div>
+    <a class="nav-cta" href="#contact">Let’s connect <span>↗</span></a>
+  </div></nav>
+  <main id="home">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> Senior Bioinformatician · Genomics × Code</div>
+        <h1>Making sense of<br><span class="gradient">biological data.</span></h1>
+        <p>I’m Abhijit, a bioinformatician working at the intersection of clinical genomics, computational biology, and software. I turn complex sequencing data into interpretable insights and practical tools.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span>↓</span></a><a class="button" href="https://github.com/abhijitswain09" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
+        <div class="micro"><span>NGS & variant interpretation</span><span>Bioinformatics pipelines</span><span>AI for genomics</span></div>
+      </div>
+      <div class="visual" aria-label="Abstract digital DNA illustration">
+        <div class="orb"></div>
+        <div class="dna"><svg viewBox="0 0 180 300" role="img" aria-label="Stylized DNA helix"><defs><linearGradient id="strand" x1="0" x2="1"><stop stop-color="#61f0e2"/><stop offset="1" stop-color="#a99aff"/></linearGradient></defs><path d="M40 8 C150 48 150 78 40 118 C-20 148 -20 178 40 208 C150 248 150 278 40 292" fill="none" stroke="url(#strand)" stroke-width="4" stroke-linecap="round"/><path d="M140 8 C30 48 30 78 140 118 C200 148 200 178 140 208 C30 248 30 278 140 292" fill="none" stroke="url(#strand)" stroke-width="4" stroke-linecap="round"/><g stroke="#8ab9d6" stroke-width="2" opacity=".8"><path d="M62 20 L118 20"/><path d="M86 43 L94 43"/><path d="M111 67 L69 67"/><path d="M104 90 L76 90"/><path d="M65 113 L115 113"/><path d="M40 137 L140 137"/><path d="M28 161 L152 161"/><path d="M45 185 L135 185"/><path d="M76 209 L104 209"/><path d="M110 232 L70 232"/><path d="M115 255 L65 255"/><path d="M89 278 L91 278"/></g><g fill="#61f0e2"><circle cx="62" cy="20" r="4"/><circle cx="111" cy="67" r="4"/><circle cx="65" cy="113" r="4"/><circle cx="28" cy="161" r="4"/><circle cx="135" cy="185" r="4"/><circle cx="70" cy="232" r="4"/><circle cx="65" cy="255" r="4"/></g><g fill="#a99aff"><circle cx="118" cy="20" r="4"/><circle cx="69" cy="67" r="4"/><circle cx="115" cy="113" r="4"/><circle cx="152" cy="161" r="4"/><circle cx="45" cy="185" r="4"/><circle cx="110" cy="232" r="4"/><circle cx="115" cy="255" r="4"/></g></svg></div>
+        <div class="float-card fc1"><b>GENOMICS / 01</b><span>Sequence → insight</span></div><div class="float-card fc2"><b>PIPELINES / 02</b><span>Reproducible by design</span></div><div class="float-card fc3"><b>AI + BIOLOGY</b><span>Building what’s next</span></div>
+      </div>
     </div>
-  </div>
+    <section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / About</div><h2>Science-minded.<br>Engineering-focused.</h2></div><p>My goal is to bridge biological complexity and usable technology, from robust analysis workflows to tools that help people make better sense of genomic evidence.</p></div>
+      <div class="about-grid"><article class="panel"><h3>What I do</h3><p>At Genomiki Solutions, I work across diagnostic NGS analysis, clinical variant interpretation, microbial and transcriptomic analysis, and development of bioinformatics products and workflows. I enjoy connecting the analytical details with the bigger clinical or research question.</p><div class="tags"><span class="tag">Clinical NGS</span><span class="tag">ACMG / AMP</span><span class="tag">Cancer genomics</span><span class="tag">AMR</span><span class="tag">Microbiome</span></div></article>
+      <article class="panel"><h3>Research roots</h3><p>I hold an MSc in Bioinformatics from Chandigarh University. During my dissertation at CSIR–IHBT, I explored gene co-expression and Bayesian network approaches to understand gene relationships in <i>Arabidopsis thaliana</i>.</p><div class="stats"><div class="stat"><b>NGS</b><span>Analysis & interpretation</span></div><div class="stat"><b>ML / AI</b><span>Emerging focus</span></div><div class="stat"><b>R + Python</b><span>Computational toolkit</span></div></div></article></div>
+    </div></section>
+    <section id="work"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / Focus areas</div><h2>Where biology meets computation.</h2></div><p>Explore the domains I work in and the kinds of problems I like solving. These are focus areas, not a claim that every item is a separate public repository.</p></div>
+      <div class="filters" role="group" aria-label="Filter focus areas"><button class="filter" data-filter="all" aria-pressed="true">All areas</button><button class="filter" data-filter="clinical" aria-pressed="false">Clinical genomics</button><button class="filter" data-filter="cancer" aria-pressed="false">Cancer</button><button class="filter" data-filter="microbial" aria-pressed="false">Microbial</button><button class="filter" data-filter="computational" aria-pressed="false">Computational biology</button><button class="filter" data-filter="ai" aria-pressed="false">AI / ML</button></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project" data-category="clinical"><div class="project-top"><span class="project-icon">⌘</span><span class="project-type">Clinical genomics</span></div><h3>Variant interpretation</h3><p>Evidence-driven SNV and indel prioritization, phenotype matching, annotation, and structured interpretation support using clinical knowledge resources.</p><div class="tags"><span class="tag">VCF</span><span class="tag">ACMG / AMP</span><span class="tag">ClinVar</span></div></article>
+        <article class="project" data-category="ai clinical"><div class="project-top"><span class="project-icon">✳</span><span class="project-type">AI × Genomics</span></div><h3>AI-assisted interpretation</h3><p>Exploring LLM-assisted workflows that organize genomic evidence and references while keeping reviewability and expert oversight central.</p><div class="tags"><span class="tag">LLMs</span><span class="tag">Python</span><span class="tag">Evidence retrieval</span></div></article>
+        <article class="project" data-category="cancer"><div class="project-top"><span class="project-icon">◈</span><span class="project-type">Cancer genomics</span></div><h3>HRD & CNV analytics</h3><p>Investigating copy-number profiles and genomic scar signals, with attention to panel design, reference baselines, quality control, and interpretation limits.</p><div class="tags"><span class="tag">CNV</span><span class="tag">HRD</span><span class="tag">NGS QC</span></div></article>
+        <article class="project" data-category="microbial"><div class="project-top"><span class="project-icon">⌬</span><span class="project-type">Microbial genomics</span></div><h3>AMR & genome analysis</h3><p>Computational workflows for microbial sequence analysis and antimicrobial resistance research, from data processing to interpretable results.</p><div class="tags"><span class="tag">Bash</span><span class="tag">Python</span><span class="tag">AMR</span></div></article>
+        <article class="project" data-category="computational"><div class="project-top"><span class="project-icon">⌁</span><span class="project-type">Computational biology</span></div><h3>Transcriptomics & networks</h3><p>Gene expression analysis, co-expression modules, functional enrichment, and Bayesian network approaches for exploring biological relationships.</p><div class="tags"><span class="tag">RNA-seq</span><span class="tag">WGCNA</span><span class="tag">R</span></div></article>
+        <article class="project" data-category="microbial computational"><div class="project-top"><span class="project-icon">◌</span><span class="project-type">Microbiome</span></div><h3>Microbiome analytics</h3><p>Pipeline automation and report-oriented analysis for microbiome workflows, connecting computational outputs with clear, useful interpretation.</p><div class="tags"><span class="tag">QIIME 2</span><span class="tag">Automation</span><span class="tag">Reporting</span></div></article>
+      </div>
+      <p style="color:var(--muted);font-size:12px;margin-top:18px">Want to see code? <a class="text-link" href="https://github.com/abhijitswain09?tab=repositories" target="_blank" rel="noreferrer">Browse my public repositories ↗</a></p>
+    </div></section>
+    <section id="toolkit"><div class="wrap"><div class="section-head"><div><div class="kicker">03 / Toolkit</div><h2>Tools for real-world analysis.</h2></div><p>A practical mix of command-line workflows, statistical analysis, genomic knowledge resources, and reproducible software practices.</p></div>
+      <div class="stack-grid"><div class="stack"><b>Python</b><span>Data processing · automation</span></div><div class="stack"><b>R</b><span>Statistics · expression analysis</span></div><div class="stack"><b>Bash & Linux</b><span>CLI pipelines · scripting</span></div><div class="stack"><b>NGS formats</b><span>FASTQ · BAM · VCF</span></div><div class="stack"><b>Clinical evidence</b><span>ClinVar · OMIM · ACMG</span></div><div class="stack"><b>Genomics</b><span>SNV · CNV · HRD</span></div><div class="stack"><b>Network biology</b><span>WGCNA · Bayesian networks</span></div><div class="stack"><b>Workflow design</b><span>QC · reproducibility · reports</span></div></div>
+    </div></section>
+    <section id="now"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / Currently exploring</div><h2>Curiosity is part of the workflow.</h2></div><p>The questions I’m interested in taking further through hands-on experiments, reading, and collaborative projects.</p></div>
+      <div class="now-grid"><article class="now-item"><span class="now-icon">✳</span><div><h3>Genomic foundation models</h3><p>How can models help with variant evidence, structural variation, and more useful genomic representations?</p></div></article><article class="now-item"><span class="now-icon">⌁</span><div><h3>Single-cell & spatial biology</h3><p>Expanding computational biology skills toward cellular states, tissue context, and complex datasets.</p></div></article><article class="now-item"><span class="now-icon">◈</span><div><h3>Responsible clinical AI</h3><p>Building evidence-grounded support tools with transparent sources and a human expert in the loop.</p></div></article><article class="now-item"><span class="now-icon">⌘</span><div><h3>Useful open-source tools</h3><p>Turning repeatable analysis tasks into clear, maintainable workflows that other researchers can understand.</p></div></article></div>
+    </div></section>
+    <section id="contact"><div class="wrap"><div class="contact"><div class="kicker">05 / Contact</div><div class="contact-row"><div><h2>Have a good biology question?</h2><p>I’m open to connecting with bioinformaticians, researchers, and builders working on genomics, computational biology, and thoughtful applications of AI.</p><div class="hero-actions"><a class="button primary" href="mailto:abhijitswain148@gmail.com">Email me ↗</a><a class="button" href="https://www.linkedin.com/in/abhijit-swain" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div><a class="button" href="https://github.com/abhijitswain09" target="_blank" rel="noreferrer">GitHub profile ↗</a></div></div>
+      <footer class="footer"><span>© <span id="year"></span> Abhijit Swain · Built with curiosity and code.</span><span><a href="#home">Back to top ↑</a> · <a href="https://github.com/abhijitswain09/Portfolio" target="_blank" rel="noreferrer">Source</a></span></footer>
+    </div></section>
+  </main>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'Close ✕':'Menu ☰'});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='Menu ☰'}));
+    const filters=[...document.querySelectorAll('.filter')],cards=[...document.querySelectorAll('.project')];
+    filters.forEach(btn=>btn.addEventListener('click',()=>{const f=btn.dataset.filter;filters.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));cards.forEach(card=>{card.hidden=f!=='all'&&!card.dataset.category.split(' ').includes(f)})}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
